@@ -37,7 +37,7 @@
         let listItem = button.parentElement.parentElement;
         let textSpan = listItem.querySelector('span');
         let editButton = listItem.querySelector('.btn-primary');
-        let newText = prompt('Edit the subjects:', textSpan.textContent);
+        let newText = prompt('Edit your skill:', textSpan.textContent);
 
         if (newText !== null) {
           textSpan.textContent = newText;
@@ -51,7 +51,7 @@
         chapterList.removeChild(listItem);
 
         if(chapterList.children.length<=0){
-          alert("Now your list is empty, please add new sujects.")
+          alert("Now your list is empty, please add new skills.")
 
   
         }
